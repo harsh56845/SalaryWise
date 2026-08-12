@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Moon, Sun, Menu, X, RefreshCw, Bot, Code2, Gamepad2 } from 'lucide-react';
+import { Moon, Sun, Menu, X, RefreshCw, Bot, Code2 } from 'lucide-react';
+import logoImg from '../../assets/logo.jpg';
 
 interface HeaderProps {
   currentTab: 'landing' | 'wizard' | 'dashboard' | 'simulators' | 'investments' | 'game';
@@ -28,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Logo & Creator Attribution */}
           <div className="flex items-center gap-3 cursor-pointer group" onClick={() => onNavigate('landing')}>
             <img 
-              src="/logo.jpg" 
+              src={logoImg} 
               alt="SalaryWise Logo" 
               className="w-10 h-10 rounded-xl object-cover border border-emerald-500/40 shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform" 
             />

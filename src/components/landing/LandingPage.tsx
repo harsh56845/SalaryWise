@@ -3,6 +3,7 @@ import {
   ArrowRight, TrendingUp, PieChart, ChevronDown, ChevronUp, 
   Sparkles, CheckCircle2, RefreshCw, Calculator, HelpCircle, Code2 
 } from 'lucide-react';
+import logoImg from '../../assets/logo.jpg';
 
 interface LandingPageProps {
   onStartOnboarding: () => void;
@@ -62,7 +63,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStartOnboarding, onL
           <div className="max-w-4xl mx-auto space-y-4">
             <div className="flex justify-center mb-2">
               <img 
-                src="/logo.jpg" 
+                src={logoImg} 
                 alt="SalaryWise Logo" 
                 className="w-20 h-20 rounded-2xl object-cover border-2 border-emerald-500/40 shadow-xl shadow-emerald-600/30 transform hover:scale-105 transition-transform" 
               />

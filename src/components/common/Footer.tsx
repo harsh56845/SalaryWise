@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldAlert, Heart, Lock, Code2 } from 'lucide-react';
+import logoImg from '../../assets/logo.jpg';
 
 export const Footer: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-3 md:col-span-1">
             <div className="flex items-center gap-3">
               <img 
-                src="/logo.jpg" 
+                src={logoImg} 
                 alt="SalaryWise Logo" 
                 className="w-8 h-8 rounded-lg object-cover border border-emerald-500/30" 
               />
